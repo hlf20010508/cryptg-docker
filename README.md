@@ -10,7 +10,7 @@ Docker image for built cryptg
 FROM hlf01/cryptg:0.4.0-python3.8.16-alpine3.17 AS cryptg_builder
 FROM python:3.8.16-alpine3.17
 ...
-COPY --from=cryptg_builder /cryptg /usr/local/lib/python3.8/site-packages
+COPY --from=cryptg_builder /cryptg /usr/local/lib/python3.8/site-packages/cryptg
 ```
 
 ## Build from source
